@@ -1,0 +1,72 @@
+:root {
+    --clr1: lightblue;
+    --clr2: lightskyblue;
+    --clr3: rgb(190, 195, 195);
+}
+/* :root {
+    --clr1: rgb(250, 96, 222);
+    --clr2: rgb(238, 45, 190);
+    --clr3: rgb(249, 217, 243);
+} */
+
+body {
+    background-color: var(--clr1);
+    text-align: center;
+    direction: rtl;
+    max-width: 800px;
+    margin: 0 auto;
+}
+button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    padding: .5em 2em;   
+    background-color: #333;
+    color: var(--clr2);
+    font-size: 1.2em;
+}
+
+button:hover {
+    transition: .3s;
+    background-color:var(--clr2);
+    padding: .5em 3em;
+    color: #333;
+}
+
+button:active {
+    transition: .3s;
+    color: white;
+}
+
+.ans {
+    background-color: var(--clr3);
+    padding: 1em;
+    margin: 2em;
+    text-align: center;
+    opacity: 0;
+    border-radius: 1em;
+}
+
+.ans.show {
+    transition: 1s;
+    opacity: 1;
+}
+
+.ans:not(.show) {
+    transition: none;
+}
+
+.ans h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.ans img {
+    max-width: 90%;
+    margin-top: 2em;
+}
+
+.ans button {
+    margin-top: 2em;
+    font-size: .8em;
+}

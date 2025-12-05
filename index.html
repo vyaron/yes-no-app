@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שאלי את שמשון</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1>
+        כן או לא
+    </h1>
+    <section class="container">
+        <button onclick="onAsk()">מה אומרת?</button>
+        <p class="loading" hidden>חושבת על זה...</p>
+        <div class="ans">
+            <h2></h2>
+            <img src="" onload="onImgReady()" />
+            <hr />
+            <button onclick="onAsk()">
+                נסי שוב
+            </button>
+        </div>
+    </section>
+    
+    <script src="js/services/ans.service-vanilla.js"></script>
+    <script src="js/ans.controller.js"></script>
+</body>
+
+</html>
